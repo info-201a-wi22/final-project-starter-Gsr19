@@ -1,8 +1,8 @@
 <<<<<<< HEAD
 # Title of your Project: Project Proposal
 =======
-# Crime in Los Angeles, California: Project Proposal 
->>>>>>> 43418649172405a5114d0300ad936cfd0a0584a2
+# Crime in Los Angeles, California: Project Proposal
+
 
 **TODO**: Edit this file. Your project proposal goes here. Save and delete the developer notes when done.
 
@@ -16,7 +16,6 @@
 * **Finishing up.** When you are finished writing and formatting your proposal, save these developer notes(they might useful in the future). Then, delete them.
 * **Questions?** If you have questions, please ask your TA or post on Teams.
 
-**test commit**
 
 |Element | Brief Description|
 |---------------| --------------
@@ -25,10 +24,9 @@
 |Project title| Give your project a concise, interesting title that summarizes the entirety of your project. (Your title can change on subsequent deliverables.) |
 |Authors | Names of your team members and contact information (email addresses). |
 =======
-|Code name | LA_Crime | 
+|Code name | LA_Crime |
 |Project title| Crime in Los Angeles, California |
 |Authors | Tiffani Pham (tpham5@uw.edu), Aswin Sundar (aswinsun@uw.edu), Sonic Yao (sjy9@uw.edu), Garrett Ruth (gsr19@uw.edu) |
->>>>>>> 43418649172405a5114d0300ad936cfd0a0584a2
 |Affiliation |  INFO-201: Technical Foundations of Informatics - The Information School - University of Washington |
 |Date | Winter 2022|
 |Abstract | Our main question is: What are the most common crimes that occur in Los Angeles, California, and why? This question is important because the types of crimes vary, and knowing what kind of crimes are more prominent in the city, it will help people address the issue and to keep the crimes limited. To address the question, we will look into the Los Angeles crime data, which includes several different factors, such as, dates and times occurred, area of occurrence, and we plan to not only look at the occurrences but to also explore why these crimes are happening. |
