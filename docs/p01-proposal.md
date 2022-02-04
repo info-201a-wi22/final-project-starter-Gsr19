@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# Title of your Project: Project Proposal
-=======
+
 # Crime in Los Angeles, California: Project Proposal
 
 ## Developer Notes
@@ -16,8 +14,6 @@
 
 |Element | Brief Description|
 |---------------| --------------
-<<<<<<< HEAD
-=======
 |Code name | LA_Crime |
 |Project title| Crime in Los Angeles, California |
 |Authors | Tiffani Pham (tpham5@uw.edu), Aswin Sundar (aswinsun@uw.edu), Sonic Yao (sjy9@uw.edu), Garrett Ruth (gsr19@uw.edu) |
