@@ -1,4 +1,4 @@
-# Title of your Project: Project Proposal 
+# LA Crime : Project Proposal 
 
 **TODO**: Edit this file. Your project proposal goes here. Save and delete the developer notes when done.
 
