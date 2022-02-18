@@ -1,5 +1,4 @@
 library(dplyr)
-
 data2020 <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-Gsr19/main/data/2020_LA_Crime_Dataset.csv", stringsAsFactors=FALSE)
 data2021 <- read.csv("https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-Gsr19/main/data/2021_LA_Crime_Dataset.csv", stringsAsFactors=FALSE)
 crime_data_2020_2021 <- full_join(data2020, data2021)
