@@ -1,5 +1,5 @@
-DT2020 <- read.csv("~/Desktop/final-project-starter-Gsr19/data/2020_LA_Crime_Dataset.csv")
-DT2021 <- read.csv("~/Desktop/final-project-starter-Gsr19/data/2021_LA_Crime_Dataset.csv")
+DT2020 <- read.csv("../data/2020_LA_Crime_Dataset.csv")
+DT2021 <- read.csv("../data/2021_LA_Crime_Dataset.csv")
 
 library(dplyr)
 
@@ -16,6 +16,7 @@ NonViolAgg_Table <-table(NonViol$Crime, NonViol$District)
 
 Viol <- filter(Chopped, FALSE == is.na(WeaponUsed))
 ViolAgg_Table <- table(Viol$Crime, Viol$District)
+
 
 #I Included three tables one for the total frequency of each crime in a district,
 #One that only shows the frequency of Non-Violent crimes in a district,

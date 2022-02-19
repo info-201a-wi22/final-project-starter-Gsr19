@@ -2,10 +2,10 @@ library("ggplot2")
 library("dplyr")
 library("lubridate")
 
-LA_2020_full_crime_data <- read.csv("2020_LA_Crime_Dataset.csv")
+LA_2020_full_crime_data <- read.csv("../data/2020_LA_Crime_Dataset.csv")
 LA_2020_date_occ <- data.frame(LA_2020_full_crime_data$DATE.OCC)
 
-LA_2021_full_crime_data <- read.csv("2021_LA_Crime_Dataset.csv")
+LA_2021_full_crime_data <- read.csv("../data/2021_LA_Crime_Dataset.csv")
 LA_2021_date_occ <- data.frame(LA_2021_full_crime_data$DATE.OCC)
 
 LA_2020_date_occ <- rename(LA_2020_date_occ, Date = LA_2020_full_crime_data.DATE.OCC)
