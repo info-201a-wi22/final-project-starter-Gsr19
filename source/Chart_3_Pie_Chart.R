@@ -1,5 +1,6 @@
 library("ggplot2")
 library("dplyr")
+library("scales")
 
 LA_2020_full_crime_data <- read.csv("../data/2020_LA_Crime_Dataset.csv")
 LA_2020_crime_desc <- data.frame(LA_2020_full_crime_data$Crm.Cd.Desc)
@@ -25,11 +26,16 @@ ordered_LA_2020_21_combined_crime_nums_final <- rename(ordered_LA_2020_21_combin
 
 final_DF <- ordered_LA_2020_21_combined_crime_nums_final
 
-pie <- ggplot(final_DF, aes(x="", y=Number, fill=TypeOfCrime)) +
-  geom_bar(stat="identity", width=1, color="white") +
-  coord_polar("y", start=0) +
+final_DF <- final_DF %>% 
+            mutate(percentage = Number / sum(Number)) %>% 
+            mutate(labels = scales::percent(percentage))
+
+pie <- ggplot(final_DF, aes(x="", y=percentage, fill=TypeOfCrime)) +
+  geom_col() +
+  geom_label(aes(label = labels),
+             position = position_stack(vjust= 0.5),
+             show.legend = FALSE) +
+  coord_polar(theta = "y") +
   theme_void() +
   ggtitle("Ten Most Common Crimes in LA in 2020-21") +
   scale_fill_discrete(name = "Type Of Crime")
-
-
