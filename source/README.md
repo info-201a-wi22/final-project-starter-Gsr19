@@ -1,21 +1,8 @@
 # The `/source` Directory
 
-All of our project code is found in this directory.  We further organize our code into 
-these sub-directories (TODO: Update/Delete)
-
 |Source Directories | Brief Description|
 |---------------| -----------------|
-|[xxx](./xxx) | Description ... 
-|[xxx](./xxx) | Description ... 
-
-
-
-# DEVELOPER NOTE 1: About ... 
-* All source code for your projects should go in the `/source` directory
-* To organize your code, you might decide to create sub-directories, which is fine.
-* If you use sub-directories, plese briefly describe them
-
-# DEVELOPER NOTE 2:  Clear and Concise Documentation
-* Please remember your audience (prospective employers, open source colleagues, TAs, Instructors). Therefore, 
-aim for clarity and conciseness.
-* When done, be sure to delete these NOTE sections and the example CSV file (which are intended for you, of course, not your audience!)
+|[Aggregate Table](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/Aggregate_Table.R) | Aggregate table for frequency of a crime in each district. |
+|[Chart 1](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/Chart_1_Bar_Chart.R) | Bar chart showing the relationship between total crime occurrence and area. |
+|[Chart 2](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/Chart_2_Histogram.R) | Histogram showing the frequency of crimes committed during each month. |
+|[Chart 3](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/Chart_3_Pie_Chart.R) | Pie chart showing the share of the ten most common crimes in LA. |
