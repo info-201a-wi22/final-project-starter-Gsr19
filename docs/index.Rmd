@@ -35,7 +35,7 @@ Without actual people to filter through this data the data can be used to commit
 ## Research Questions
 1. What are the most common crimes that occur in Los Angeles, CA?
 2. Why do these crimes occur?
-3. What time in a day do these crimes typically tend to occur?
+3. Which months of the year have the most crimes that were reported?
 4. Which area in area in Los Angeles has the most crimes?
 
 These questions are important to address because there is an increase in crime rates. By knowing the answers to these questions, police, citizens, society, etc. can predict and be aware of what crimes are likely to happen and prevent them from happening. It is important that as a society, we are keeping people as safe as possible and ensure that people are being ethical in their actions. These questions being answered will further community relations, better resource allocation and budget formations, and many more.
