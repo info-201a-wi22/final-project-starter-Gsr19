@@ -11,7 +11,7 @@ unique_area_count <- crime_data_2020_2021 %>%
   group_by(AREA.NAME) %>%
   summarize(count=n())
 
-ggplot(data = unique_area_count) +
+bar <- ggplot(data = unique_area_count) +
   geom_col(mapping = aes(x = reorder(AREA.NAME, +count), y = count),
            fill = "red2") +
   geom_text(aes(x = AREA.NAME, y = count, label=count),
@@ -26,12 +26,12 @@ ggplot(data = unique_area_count) +
   ) 
 
 
-# The question we are trying to answer with this chart is: Which area in Los Angeles has the 
+# The question we are trying to answer with this chart is: Which area in Los Angeles has the
 # most crimes that were reported?
 # The purpose of this chart is to show how many crimes were reported in each of the different
 # areas of Los Angeles. We put the areas in order from area with most occurrences to least occurrences.
 # By looking at the different areas, people are able to see where they are most safe in Los Angeles,
 # and where there needs to be more regulation and awareness.
-# From this chart, we can see that the area with the most crimes is 77th Street (18,346 observations), 
-# whereas the area with the least crimes is Foothill (9,578 observations). The top 3 areas that had 
+# From this chart, we can see that the area with the most crimes is 77th Street (18,346 observations),
+# whereas the area with the least crimes is Foothill (9,578 observations). The top 3 areas that had
 # the most crime occurrences were 77th Street, Pacific, and Central.

@@ -21,7 +21,7 @@ by_month_function <- function(x,n=1){
   seq(min(x,na.rm=T),max(x,na.rm=T),by=paste0(n," months"))
 }
 
-ggplot(LA_2020_21_date_occ,aes(Date)) +
+hist <- ggplot(LA_2020_21_date_occ,aes(Date)) +
   geom_histogram(breaks = by_month_function(LA_2020_21_date_occ$Date), binwidth = 30, colour = "white", fill = "black") +
   scale_x_date(labels = scales::date_format("%Y-%b"),
                breaks = by_month_function(LA_2020_21_date_occ$Date,1)) + 

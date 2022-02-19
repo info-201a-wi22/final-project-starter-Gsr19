@@ -25,7 +25,7 @@ ordered_LA_2020_21_combined_crime_nums_final <- rename(ordered_LA_2020_21_combin
 
 final_DF <- ordered_LA_2020_21_combined_crime_nums_final
 
-ggplot(final_DF, aes(x="", y=Number, fill=TypeOfCrime)) +
+pie <- ggplot(final_DF, aes(x="", y=Number, fill=TypeOfCrime)) +
   geom_bar(stat="identity", width=1, color="white") +
   coord_polar("y", start=0) +
   theme_void() +

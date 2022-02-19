@@ -16,7 +16,7 @@ NonViolAgg_Table <-table(NonViol$Crime, NonViol$District)
 
 Viol <- filter(Chopped, FALSE == is.na(WeaponUsed))
 ViolAgg_Table <- table(Viol$Crime, Viol$District)
-table(Viol$Crime, Viol$WeaponUsed)
+wpn <- table(Viol$Crime, Viol$WeaponUsed)
 
 
 #I Included three tables one for the total frequency of each crime in a district,
@@ -25,8 +25,8 @@ table(Viol$Crime, Viol$WeaponUsed)
 #I also included a smaller table to show which crimes seems to use a particular style of weapon.
 #In order to gauge how serious a violent crime is as they vary from automatic firearms to just hands.
 #
-#These tables help reveal the areas where Violent crime is persistent compared 
-#to non-violent crimes showing where police presence could help save lives
-#compared to areas mostly consisting of non-violent crime where police presence 
-#would likely only save property from being stolen in that area and would just 
-#drive people to steal from other areas.
+# These tables help reveal the areas where Violent crime is persistent compared
+# to non-violent crimes showing where police presence could help save lives
+# compared to areas mostly consisting of non-violent crime where police presence
+# would likely only save property from being stolen in that area and would just
+# drive people to steal from other areas.
