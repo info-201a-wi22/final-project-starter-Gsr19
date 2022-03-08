@@ -23,7 +23,7 @@ function(input, output) {
   output$i3_bar <- renderPlotly({
     plot_ly(
       data = i3_df(),
-      x = ~Area,
+      x = ~reorder(Area, -count),
       y = ~count,
       type = "bar"
     ) %>%

@@ -24,13 +24,6 @@ i3_by_month_2020 <- i3_data_2020 %>%
   summarise(count = n())
 
 
-
-# test_chart <- plot_ly(by_month_2021,
-#                       x = ~Area,
-#                       y = ~count,
-#                       type = "bar")
-
-
 interactive_3 <- tabPanel(
   "Interactive 3",
   titlePanel("Crime Frequency by Area"),
@@ -59,11 +52,20 @@ interactive_3 <- tabPanel(
           "October" = 10,
           "November" = 11,
           "December" = 12),
-        selected = "January"
+        selected = 1
       )
     ),
     mainPanel(
-      plotlyOutput("i3_bar")
+      plotlyOutput("i3_bar"),
+      p("The question we are trying to answer with this chart is: Which area in Los Angeles has the
+        most crimes that were reported?
+        The purpose of this chart is to show how many crimes were reported in each of the different
+        areas of Los Angeles. We put the areas in order from area with most occurrences to least occurrences.
+        By looking at the different areas, people are able to see where they are most safe in Los Angeles,
+        and where there needs to be more regulation and awareness.
+        From this chart, we can see that the area with the most crime is often in 77th Street,
+        whereas the area with the least crimes quite consistently is Foothill. The top 3 areas that had
+        the most crime occurrences were 77th Street, Pacific, and Central.")
     )
   )
 )
