@@ -4,10 +4,29 @@ library(shiny)
 library(dplyr)
 
 source("source/interactive_panel_3_Bar.R")
-
+source("source/Ip2.R")
 
 # Define server logic required to draw a histogram
 function(input, output) {
+  ouput$i2bar <- renderPlotly(
+    req(input$i2year),
+    req(input$i2sex),
+    req(input$range),
+    if(input$i2year == 2020){
+      dfi2 <- twenty %>%
+      filter(Age >= input$range[[1]] & Age <= input$range[[2]] & Sex == input$i2sex)  
+    }
+    if(input$i2year == 2021){
+      dfi2 <- twenty1 %>%
+      filter(Age >= input$range[[1]] & Age <= input$range[[2]] & Sex == input$i2sex)
+    }
+    variable <- plot_ly(data = dfi2(), x = ~Area, y = ~total, type = "bar") %>%
+      layout(title = "Distribution of Crime in LA by Age and Sex",
+             xaxis = list(title = "Area"),
+             yaxis = list(title = "Number of Victims")),
+    variable
+  )
+  
   
   i3_df <- reactive({
     if (input$i3year == 2020) {
