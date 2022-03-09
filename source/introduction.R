@@ -21,6 +21,7 @@ introduction <- tabPanel(
   ),
   fluidRow(
     tags$style("Crime in Los Angeles, California"),
+    h1("Crime in Los Angeles, California"),
     h2("by Tiffani Pham, Garrett Ruth, Aswin Sundar, and Sonic Yao"),
     h3("Introduction"),
     p("Los Angeles, California is one the world's most famous cities, known for being the home of many rich and successful celebrities and 
