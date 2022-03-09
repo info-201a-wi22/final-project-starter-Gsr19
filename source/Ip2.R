@@ -18,10 +18,10 @@ twenty1 <- read.csv("data/2021_LA_Crime_Dataset.csv")%>%
  
 I2 <- tabPanel(
   "Interactive 2",
-  titlePanel("Victim's by Age, Sex, and Area"),
+  titlePanel("Distrbution of Victims by Age, Sex, and Area"),
   sidebarLayout(
     sidebarPanel(
-      p("Data Set"),
+      p("Graph Options"),
       selectInput(
         "i2year",
         "Select Year",
