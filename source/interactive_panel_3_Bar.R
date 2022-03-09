@@ -29,7 +29,7 @@ interactive_3 <- tabPanel(
   titlePanel("Crime Frequency by Area"),
   sidebarLayout(
     sidebarPanel(
-      p("Graph Options"),
+      h2(p("Graph Options")),
       selectInput(
         inputId = "i3year",
         "Select Year",

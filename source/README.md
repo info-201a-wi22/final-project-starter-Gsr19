@@ -7,7 +7,9 @@
 |[Chart 2](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/Chart_2_Histogram.R) | Histogram showing the frequency of crimes committed during each month. |
 |[Chart 3](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/Chart_3_Pie_Chart.R) | Pie chart showing the share of the ten most common crimes in LA. |
 |[Summary](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/Summary.R) | List of summary statistics for the overall dataset highlighting important elements. |
+|[Introduction Page](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/introduction.R) | Panel for introduction page on Shiny App. |
 |[Interactive Page 1](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/IP1.R) | Pie chart illustrating the proportion of each unique crime reported. |
 |[Interactive Page 2](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/IP2.R) | Bar chart showing the amount of victims identified by a specific age range and sex in an area. |
 |[Interactive Page 3](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/interactive_panel_3_Bar.R) | Bar chart showing the frequency of crimes in different areas in Los Angeles, California. |
 |[Report Page](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/ReportPage.R) | The page containing the entire report. |
+|[Summary Page](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/Summary_Page.R) | Summary page for the Shiny App containing information on the exploration of crime in LA. |
