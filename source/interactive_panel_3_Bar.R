@@ -57,7 +57,8 @@ interactive_3 <- tabPanel(
     ),
     mainPanel(
       plotlyOutput("i3_bar"),
-      p("The question we are trying to answer with this chart is: Which area in Los Angeles has the
+      p("The chart above shows data from January, 2020 through June, 2021.
+        The question we are trying to answer with this chart is: Which area in Los Angeles has the
         most crimes that were reported?
         The purpose of this chart is to show how many crimes were reported in each of the different
         areas of Los Angeles. We put the areas in order from area with most occurrences to least occurrences.
