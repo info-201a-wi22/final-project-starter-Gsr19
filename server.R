@@ -15,8 +15,7 @@ function(input, output) {
     if(input$i2year == 2020){
       dfi2 <- twenty %>%
       filter(Age >= input$range[[1]] & Age <= input$range[[2]] & Sex == input$i2sex)  
-    }
-    if(input$i2year == 2021){
+    } else if (input$i2year == 2021) {
       dfi2 <- twenty1 %>%
       filter(Age >= input$range[[1]] & Age <= input$range[[2]] & Sex == input$i2sex)
     }
