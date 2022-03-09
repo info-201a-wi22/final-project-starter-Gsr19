@@ -7,9 +7,9 @@ as follows:
 
 |Report | Brief Description|
 |---------------| -----------------|
-|[Project Proposal](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/doc/p01-proposal.md) | A brief description of your P1:Project Proposal
-|[Exploratory Data Analysis](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/index.html) | A brief description of your exploratory data analyis report
-|[Interactive Vizualizaiton](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/ReportPage.R) | A brief description of your final report. 
+|[Project Proposal](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/docs/p01-proposal.md) | A brief description of your P1:Project Proposal
+|[Exploratory Data Analysis](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/docs/index.Rmd) | A brief description of your exploratory data analyis report
+|[Interactive Visualization](https://github.com/info-201a-wi22/final-project-starter-Gsr19/blob/main/source/ReportPage.R) | A brief description of your final report. 
 
 
 ## DEVELOPER Note 0
