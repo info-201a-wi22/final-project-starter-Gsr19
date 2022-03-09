@@ -3,7 +3,8 @@ library("shiny")
 library("lubridate")
 library("plotly")
 library("ggplot2")
-report <- fluidPage(
+report <- tabPanel(
+  "Report Page",
   h1("Crime in Los Angeles, California"),
   em("Authors: Tiffani Pham (tpham5@uw.edu), Aswin Sundar (aswinsun@uw.edu), Sonic Yao (sjy9@uw.edu), Garrett Ruth (gsr19@uw.edu)"),
   em("Affiliation |  INFO-201: Technical Foundations of Informatics - The Information School - University of Washington"),
@@ -43,5 +44,23 @@ report <- fluidPage(
   p("
     "),
   h2("Findings"),
-  p(""),
+  p("Based on our questions the most common crime in LA ends up being stolen vehicles, with simple assault and vandalism following behind.
+    The underlying reason behind these crimes cannot be found within the dataset but its fair to say that vehicles sell for a significant amount and stealing one leads to a significant amount of monetary gain. From this we can likely conclude that financial issues and poverty facing residents causes a need to resort to vehicle theft to survive.
+    Looking at all crimes grouped by month, January does have the highest number of crimes which could be influenced by the presence of new items from christmas making for a better target for theft but, most likely, this distinction is just a matter of chance and doesn't show a real trend to target.
+    On the other hand location does show a distinct trend as 77th Street has the highest number of crimes reported with almost 2000 more than Pacific right behind it."),
+  p("
+    "),
+  h2("Discussion"),
+  p("Our finding are important in that they show areas where increased security would be most important. Focusing on the top 3 areas of crime would be much more beneficial than increased presence spread evenly. It also showed that violent crime wasn't the most common crime and that theft was more common overall. This helps in the approach to reduce crime in that while police presence would be most helpful to violent crime since the most common crime is vehicle theft increasing surveillance in parking garages and street parking would likely deter crime. Our findings also show how monetary policy can be created to support the people so that theft crimes are less common since there would be less need."),
+  p("
+    "),
+  h2("Conclusion"),
+  p("The most important data point discovered was that nonviolent crime makes up the majority of the crime in Los Angeles and can be solved with surveillance and policy changes and doesn't specifically require increased police presence to solve as the underlying issues wouldn't be solved by force."),
+  p("
+    "),
+  h2("References"),
+  p("1. Los Angeles Police Department. Los Angeles Crime Data 2020-present (Crime_Data_from_2020_to_Present). Los Angeles, CA: Los Angeles Police Department, 2020. (https://www.waldenu.edu/online-bachelors-programs/bs-in-criminal-justice/resource/why-national-crime-statistics-are-important).
+    2. “Officers Shoot Person Armed With Knife in Pacoima.” NCS Los Angeles, 1 Feb. 2022.
+    3. United States, Congress, Census Bureau. Quick Facts, Los Angeles.
+    4. Winton, Richard. 'Hate Crimes in L.A. and Other U.S. Cities Jump to Levels Not Seen in Decades, Study Finds.' Los Angeles Times, 1 Feb. 2022.")
 )
