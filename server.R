@@ -5,9 +5,36 @@ library(dplyr)
 
 source("source/interactive_panel_3_Bar.R")
 source("source/Ip2.R")
+source("source/IP1.R")
 
-# Define server logic required to draw a histogram
+# Define server logic required to draw charts
 function(input, output) {
+  
+  I1DF<- reactive ({
+    req(input$I1Year)
+    req(input$I1Type)
+    if(input$I1Year == 2020){
+      if (input$I1Type == "type1") {
+        I1_data_frame <- final_DF_2020
+      } else if (input$I1Type == "type2") {
+        I1_data_frame <- final_DF2_2020
+      }
+    } else if (input$I1Year == 2021){
+      if (input$I1Type == "type1") {
+        I1_data_frame <- final_DF_2021
+      } else if (input$I1Type == "type2") {
+        I1_data_frame <- final_DF2_2021
+      }
+    }
+  })
+  
+  output$I1Pie <- renderPlotly({
+    plot_ly(I1DF(), labels = ~TypeOfCrime, values = ~Number, type = 'pie')%>% 
+      layout(title = "Ten Common Crimes in Los Angeles, California",
+             xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+             yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+  })
+  
   dafi2 <- reactive ({
     req(input$i2year)
     req(input$i2sex)
