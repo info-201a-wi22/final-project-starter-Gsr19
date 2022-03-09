@@ -5,8 +5,22 @@ library(plotly)
 
 introduction <- tabPanel(
   "Introduction",
+  tags$head(
+    tags$style(HTML("
+      body {
+        color: midnightblue;
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+      }
+      img {
+        border: 5px solid midnightblue
+      }
+                    "))
+  ),
   fluidRow(
-    h1("Crime in Los Angeles, California"),
+    tags$style("Crime in Los Angeles, California"),
     h2("by Tiffani Pham, Garrett Ruth, Aswin Sundar, and Sonic Yao"),
     h3("Introduction"),
     p("Los Angeles, California is one the world's most famous cities, known for being the home of many rich and successful celebrities and 
@@ -19,11 +33,9 @@ introduction <- tabPanel(
       community in Los Angeles, whereas there is a population of almost 4 million people, with many tourists going in and 
       out of the city as well."),
     h3("Questions We Want To Answer:"),
-    tags$ol(
-      tags$li("What are the most common crimes that occur in Los Angeles, CA and why?"),
-      tags$li("Which months of the year have the most crimes that were reported?"),
-      tags$li("Which area in Los Angeles has the most crimes?")
-    ),
+    p("1. What are the most common crimes that occur in Los Angeles, CA and why?"),
+    p("2. Which months of the year have the most crimes that were reported?"),
+    p("3. Which area in Los Angeles has the most crimes?"),
     p("
       "),
     img(src = "https://cms.finnair.com/resource/blob/1397898/c4410bf39d8838d7285bc25be6d4183b/lax-main-data.jpg",
