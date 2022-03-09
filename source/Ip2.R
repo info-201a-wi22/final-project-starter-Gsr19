@@ -37,9 +37,8 @@ I2 <- tabPanel(
       ),
       sliderInput("range", "Age Range:",
                   min = 1, max = 100,
-                  value = c(18,55))
-      ,
-      
+                  value = c(18,55)
+      ),
     ),
     mainPanel(
       plotlyOutput("i2bar"),
